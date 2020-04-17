@@ -96,6 +96,41 @@ text-align:left;
   text-align:center;
   padding-top: 300px;
 }
+@media (max-width: 370px) {
+.text-middle {
+      text-align:center;
+      padding-top: 60px;
+      font-size: 30px;
+  }
+}
+@media (width: 411px) {
+.text-middle {
+      text-align:center;
+      padding-top: 200px;
+      font-size: 30px;
+  }
+}
+@media (width: 414px) {
+.text-middle {
+      text-align:center;
+      padding-top: 200px;
+      font-size: 30px;
+  }
+}
+@media (width: 375px) {
+.text-middle {
+      text-align:center;
+      padding-top: 200px;
+      font-size: 30px;
+  }
+}
+@media (width: 360px) {
+.text-middle {
+      text-align:center;
+      padding-top: 200px;
+      font-size: 30px;
+  }
+}
 
 .text-h1-content {
   color: mediumvioletred;
@@ -129,13 +164,34 @@ z-index:9;
   margin-right: auto;
   padding-top: 13px;
 }
+@media (max-width: 370px) {
+.default-header img {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      padding-top: 13px;
+      height: 40px;
+      width: 40px;
+  }
+}
+@media (width: 360px) {
+.default-header img {
+      height: 70px;
+      width: 70px;
+  }
+}
 
 .home-banner-area {
 background:url(https://raw.githubusercontent.com/TutorialsAndroid/tutorialsandroid.github.io/master/img/home-banner-bg.png) no-repeat;
-background-size:cover;
+background-size:cover!important;
 background-position:center center;
-max-height:1200px;
+max-height:1500px;
 filter:hue-rotate(70deg);
+}
+@media (max-width: 1024px) {
+.home-banner-area {
+      max-height:1000px;
+  }
 }
 
 .home-banner-left h1 {
@@ -160,16 +216,6 @@ padding-bottom:40px;
 font-size:45px;
 }
 
-@media max-width768px{
-.section-title h2 {
-font-size:30px;
-margin-bottom:15px;
-}
-
-.section-title p br {
-display:none;
-}
-
 .home-banner-area .fullscreen {
 height:700px!important;
 }
@@ -181,30 +227,4 @@ text-align:center;
 .home-banner-left h1 {
 font-size:36px;
 }
-}
-
-@media min-width1921px{
-  .home-banner-area .fullscreen {
-  align-items:start!important;
-  padding-top:250px;
-  max-height:1200px!important;
-  }
-}
-
-@media max-width767px{
-  .home-banner-left h1 br {
-  display:none;
-  }
-}
-
-@media max-width414px{
-  .home-banner-left h1 {
-  font-size:40px;
-  }
-}
-
-@media max-width800px{
-  .home-banner-left {
-  margin-top:30px;
-  }
 }
