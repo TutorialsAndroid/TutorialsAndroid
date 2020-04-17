@@ -193,6 +193,11 @@ filter:hue-rotate(70deg);
       max-height:1000px;
   }
 }
+@media (max-width: 830px) {
+.home-banner-area {
+      height:800px;
+  }
+}
 
 .home-banner-left h1 {
 color:#222;
