@@ -7,10 +7,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Introduction To Android</title>
     <link rel="icon" href="https://raw.githubusercontent.com/TutorialsAndroid/tutorialsandroid.github.io/master/img/favicon.png">
-   <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href=" https://cdn.jsdelivr.net/gh/TutorialsAndroid/tutorialsandroid.github.io@3c26715/css/bootstrap.min.css">
-    <!-- CSS -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/TutorialsAndroid/tutorialsandroid.github.io@3c26715/css/main.css"/>
+   <!-- Bootstrap CSS 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/TutorialsAndroid/tutorialsandroid.github.io@3c26715/css/bootstrap.min.css"> -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- CSS 
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/TutorialsAndroid/tutorialsandroid.github.io@3c26715/css/main.css"/>-->
+  <link rel="stylesheet" type="text/css" href="css/main.css">
 </head>
 
 <body>
@@ -27,7 +29,7 @@
                      <h2>Introduction:
                      </h2>
                      <p class="excert">
-                      Android is a Linux based operating system it is designed primarily for touch screen mobile devices such as smart phones and tablet computers. The operating system have developed a lot in last 15 years starting from black and white phones to recent smart phones or mini computers. One of the most widely used mobile OS   these days is android. The android is software that was founded in Palo Alto of California in 2003.
+                      Android is a Linux based operating system it is designed primarily for touch screen mobile devices such as smart phones and tablet computers. The operating system have developed a lot in last 15 years starting from black and white phones to recent smart phones or mini computers. One of the most widely used mobile OS these days is android. The android is software that was founded in Palo Alto of California in 2003.
                      </p>
                      <p>
                        The android is a powerful operating system and it supports large number of applications in Smartphones. These applications are more comfortable and advanced for the users. The hardware that supports android software is based on ARM architecture platform. The android is an open source operating system means that it’s free and any one can use it. The android has got millions of apps available that can help you managing your life one or other way and it is available low cost in market at that reasons android is very popular.
@@ -35,63 +37,71 @@
                      
                      <div class="quote-wrapper">
                         <div class="quotes">
-                           <center><img src="https://raw.githubusercontent.com/TutorialsAndroid/tutorialsandroid.github.io/master/img/blog/android-logo.png" style="width:100px;height: 100px;"></center>
+                           <center><img class="image" src="https://raw.githubusercontent.com/TutorialsAndroid/tutorialsandroid.github.io/master/img/blog/android-logo.png"></center>
                         </div>
                      </div>
                    
                      <p>
-                       The android development supports with the full java programming language. Even other packages that are API and JSE are not supported. The first version 1.0 of android development kit (SDK) was released in 2008 and latest updated version is jelly bean.
+                       The android development supports with the full java programming language. Even other packages that are API and JSE are not supported. The first version 1.0 of android development kit (SDK) was released in 2008 and latest updated version is android10.
                      </p>
 
                     <h2>Android Architecture:
                      </h2>
                      <p>
-                      The android is a operating system and is a stack of software components which is divided into five sections and four main layers that is:
-                      <br>Linux kernel</br><br>Libraries</br><br>Android runtime</br>
-                      </p>  
-                      <h2>Application frame work:</h2>
+                      Android is an open source, Linux-based software stack created for a wide array of devices and form factors. The following diagram shows the major components of the Android platform.
+                      </p> 
+                      <div class="quote-wrapper">
+                      	<h3>Click On Image To Enlarge</h3>
+                      	<div class="quotes">
+                           <center><img id="myImg" src="img/blog/android-stack.png" style="width:100%;max-width:300px;">
+                           </center>
+                      
+                        <!-- The Modal -->
+						<div id="myModal" class="modal">
+  							<span class="close">&times;</span>
+  							<img class="modal-content" id="img01">
+  							<div id="caption"></div>
+						</div>
+						</div>
+                     </div>
+                      
                        <p>
-                       <h3>Linux kernel:</h3><br>
+                       <h3>The Linux Kernel</h3>
+                       <hr>
 The android uses the powerful Linux kernel and it supports wide range of hardware drivers. The kernel is the heart of the operating system that manages input and output requests from software. This provides basic system functionalities like process management, memory management, device management like camera, keypad, display etc the kernel handles all the things. The Linux is really good at networking and it is not necessary to interface it to the peripheral hardware. The kernel itself does not interact directly with the user but rather interacts with the shell and other programs as well as with the hard ware devices on the system.
-                      </p>  
+                      </p> 
                       <p>
-                        <h3>Libraries:</h3><br>
-The on top of a Linux kennel there is a set of libraries including open source web browser such as webkit, library libc. These libraries are used to play and record audio and video. The SQLite is a data base which is useful for storage and sharing of application data. The SSL libraries are responsible for internet security etc.
-                      </p> 
-                       <p>
-                        <h3>Android Runtime:</h3><br>
-The android runtime provides a key component called Dalvik Virtual Machine which is a kind of java virtual machine. It is specially designed and optimized for android. The Dalvik VM is the process virtual machine in the android operating system. It is a software that runs apps on android devices.
+                      <h3>Hardware Abstraction Layer (HAL)</h3>
+                      <hr>
+                      The hardware abstraction layer (HAL) provides standard interfaces that expose device hardware capabilities to the higher-level Java API framework. The HAL consists of multiple library modules, each of which implements an interface for a specific type of hardware component, such as the camera or bluetooth module. When a framework API makes a call to access device hardware, the Android system loads the library module for that hardware component.
 
-The Dalvik VM makes use of Linux core features like memory management and multithreading which is in a java language. The Dalvik VM enables every android application to run it own process. The Dalvik VM  executes the files in the .dex format.
-                      </p>  
-                       <p>
-                        <h3>Application frame work:</h3><br>
-The application frame work layer provides many higher level services to applications such as windows manager, view system, package manager, resource manager etc. The application developers are allowed to make use of these services in their application.
-                      </p>  
+                      </p> 
                       <p>
-                        <h3>Applications and Features:</h3><br>
-You will find all the android applications at the top layer and you will write your application and install on this layer. Example of such applications are contacts, books, browsers, services etc. Each application perform a different role in the over all applications.
-<br>
-<h4>Features:</h4></br>
-
-Head set layout<br>
-Storage<br>
-Connectivity: GSM/EDGE, IDEN, CDMA, Bluetooth, WI-FI, EDGE,3G,NFC, LTE,GPS.<br>
-Messaging: SMS, MMS, C2DM (could to device messaging), GCM (Google could messaging)<br>
-Multilanguage support
-Multi touch
-Video calling
-Screen capture
-External storage
-Streaming media support
-Optimized graphics
+                      <h3>Android Runtime</h3>
+                      <hr>
+                      In a simplest term it is a system used by operating system which takes care of converting the code that you write in a high level language like Java to machine code and understand by CPU/Processor.
+                      ART(Android Runtime) is written to run multiple virtual machines on low-memory devices by executing DEX files.So You will have a question now what is DEX File?. DEX(Dalvik executable) file is an executable file saved in a format that contains compiled code written for Android.
+                      <p>
+                        <h3>Native C/C++ Libraries</h3>
+                        <hr>
+Let’s say your app is a game which uses a lot of physics and intensive computation, so using C/C++ libraries may help you with issues resource consumption. That way your game performs better as it is harnessing some extra resources from the system itself. Resource means like files that your code uses, such as bitmaps, animation instructions, and more. Many core Android system components and services, such as ART(Android Runtime) and HAL(Hardware Abstraction Layer), are built from native code that require native libraries written in C and C++.
                       </p> 
                        <p>
-                        <h3>Android Emulator:</h3><br>
-The Emulator is a new application in android operating system. The emulator is a new prototype that is used to develop and test android applications without using any physical device.
+                        <h3>Java API Framework</h3>
+                        <hr>
+The entire feature-set of the Android OS is available to you through APIs written in the Java language. These APIs form the building blocks you need to create Android apps by simplifying the reuse of core, modular system components and services, which include the following:
 
-The android emulator has all of the hardware and software features like mobile device except phone calls. It provides a variety of navigation and control keys. It also provides a screen to display your application. The emulators utilize the android virtual device configurations. Once your application is running on it, it can use services of the android platform to help other applications, access the network, play audio, video, store and retrieve the data.
-                      </p> 
+					<li>A rich and extensible View System you can use to build an app’s UI, including lists, grids, text boxes, buttons, and even an embeddable web browser.</li>
+					<li>A Resource Manager, providing access to non-code resources such as localized strings, graphics, and layout files.</li>
+					<li>A Notification Manager that enables all apps to display custom alerts in the status bar</li>
+                      </p>  
+                       <p>
+                        <h3>System Apps</h3>
+                        <hr>
+Android comes with a set of core apps for email, SMS messaging, calendars, internet browsing, contacts, and more. Apps included with the platform have no special status among the apps the user chooses to install. So a third-party app can become the user's default web browser, SMS messenger, or even the default keyboard (some exceptions apply, such as the system's Settings app).
+
+The system apps function both as apps for users and to provide key capabilities that developers can access from their own app. For example, if your app would like to deliver an SMS message, you don't need to build that functionality yourself—you can instead invoke whichever SMS app is already installed to deliver a message to the recipient you specify.
+                      </p>  
                   </div>
                </div>
              </div>
@@ -113,7 +123,7 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
     </footer>
     <!-- footer part end-->
 
-    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <!-- Global site tag (gtag.js) - Google Analytics 
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-163881002-1"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
@@ -121,7 +131,10 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
         gtag('js', new Date());
 
         gtag('config', 'UA-163881002-1');
-    </script> 
+    </script> -->
+
+     <script src="js/jquery-3.5.0.min.js"></script>
+  <script src="js/main.js"></script>
 
 
  </body>
