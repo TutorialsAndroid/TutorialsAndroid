@@ -520,18 +520,18 @@ padding:5px 15px!important;
     width: 100px;
   }
 
-#myImg,#myImg2,#myImg3,#myImg4,#myImg5,#myImg6,#myImg7 {
+#myImg,#myImg2,#myImg3,#myImg4,#myImg5,#myImg6,#myImg7,#myImg8,#myImg9 {
   border-radius: 5px;
   cursor: pointer;
   transition: 0.3s;
 }
 
-#myImg:hover,#myImg2:hover,#myImg3:hover,#myImg4:hover,#myImg5:hover,#myImg6:hover,#myImg7:hover {
+#myImg:hover,#myImg2:hover,#myImg3:hover,#myImg4:hover,#myImg5:hover,#myImg6:hover,#myImg7:hover,#myImg8:hover,#myImg9:hover {
   opacity: 0.7;
 }
 
 /* The Modal (background) */
-.modal,.modal2,.modal3,.modal4,.modal5,.modal6,.modal7 {
+.modal,.modal2,.modal3,.modal4,.modal5,.modal6,.modal7,.modal8,.modal9 {
   display: none; /* Hidden by default */
   position: fixed; /* Stay in place */
   z-index: 1; /* Sit on top */
@@ -546,7 +546,7 @@ padding:5px 15px!important;
 }
 
 /* Modal Content (image) */
-.modal-content,.modal-content2,.modal-content3,.modal-content4,.modal-content5,.modal-content6,.modal-content7 {
+.modal-content,.modal-content2,.modal-content3,.modal-content4,.modal-content5,.modal-content6,.modal-content7,.modal-content8,.modal-content9 {
   margin: auto;
   display: block;
   width: 80%;
@@ -565,7 +565,7 @@ padding:5px 15px!important;
  } 
 
 /* Add Animation */
-.modal-content, #caption,.modal-content2, #caption2,.modal-content3, #caption3,.modal-content4, #caption4,.modal-content5, #caption5,.modal-content6, #caption6,.modal-content7, #caption7 {  
+.modal-content, #caption,.modal-content2, #caption2,.modal-content3, #caption3,.modal-content4, #caption4,.modal-content5, #caption5,.modal-content6, #caption6,.modal-content7, #caption7,.modal-content8, #caption8,.modal-content9, #caption9 {  
   -webkit-animation-name: zoom;
   -webkit-animation-duration: 0.6s;
   animation-name: zoom;
@@ -583,7 +583,7 @@ padding:5px 15px!important;
 }
 
 /* The Close Button */
-.close,.close2,.close3,.close4,.close5,.close6,.close7 {
+.close,.close2,.close3,.close4,.close5,.close6,.close7,.close8,.close9 {
   position: absolute;
   top: 15px;
   right: 35px;
@@ -593,8 +593,8 @@ padding:5px 15px!important;
   transition: 0.3s;
 }
 
-.close:hover,.close2:hover,.close3:hover,.close4:hover,.close5:hover,.close6:hover,.close7:hover,
-.close:focus,.close2:focus,.close3:focus,.close4:focus,.close5:focus,.close6:focus,.close7:focus {
+.close:hover,.close2:hover,.close3:hover,.close4:hover,.close5:hover,.close6:hover,.close7:hover,.close8:hover,.close9:hover,
+.close:focus,.close2:focus,.close3:focus,.close4:focus,.close5:focus,.close6:focus,.close7:focus,.close8:focus,.close9:focus {
   color: #bbb;
   text-decoration: none;
   cursor: pointer;
@@ -621,6 +621,12 @@ padding:5px 15px!important;
     width: 100%;
   }
   .modal-content7 {
+    width: 100%;
+  }
+  .modal-content8 {
+    width: 100%;
+  }
+   .modal-content9 {
     width: 100%;
   }
 
