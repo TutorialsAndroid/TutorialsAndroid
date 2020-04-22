@@ -667,7 +667,7 @@ color:#222;
   margin: 4px 2px;
   cursor: pointer;
   border-radius: 8px;
-}
+} 
 
 .div-button {
   text-align: center;
@@ -824,33 +824,5 @@ color:#222;
 font-size:48px;
 line-height:1em;
 margin-bottom:20px;
-}
-
-.banner-area {
-background:url(https://raw.githubusercontent.com/TutorialsAndroid/tutorialsandroid.github.io/master/img/home-banner-bg.png) no-repeat center;
-background-position:right;
-min-height:510px;
-}
-
-@media max-width991px{
-.section-title {
-padding-bottom:40px;
-}
-
-.home-banner-left h1 {
-font-size:45px;
-}
-
-.home-banner-area .fullscreen {
-height:700px!important;
-}
-
-.home-banner-left {
-text-align:center;
-}
-
-.home-banner-left h1 {
-font-size:36px;
-}
 }
 /* INDEX PAGE CSS END HERE */
