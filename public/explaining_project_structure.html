@@ -1,0 +1,255 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>PROJECT STRUCTURE</title>
+    <link rel="icon" href="https://raw.githubusercontent.com/TutorialsAndroid/tutorialsandroid.github.io/master/img/favicon.png">
+   <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/TutorialsAndroid/tutorialsandroid.github.io@9c228ea/css/bootstrap.min.css">
+   <!-- CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/TutorialsAndroid/tutorialsandroid.github.io@b84b571/css/main.css"/>
+</head>
+
+<body>
+   <!--================Blog Area =================-->
+   <section class="blog_area single-post-area section_padding">
+      <div class="container">
+         <div class="row">
+            <div class="col-lg-8 posts-list">
+               <div class="single-post">
+                  <div class="feature-img">
+                     <img class="img-fluid" src="https://raw.githubusercontent.com/TutorialsAndroid/tutorialsandroid.github.io/master/img/blog/blog06/android-banner.png" alt="">
+                  </div>
+                  <div class="blog_details">
+                     <h2>EXPLAINING PROJECT STRUCTURE [Manifest Part 1]:
+                     </h2>
+                     <hr>
+                     <p class="excert">
+                      Now we will see the project structure. In previous blog i have tell you about how to create a new project in android studio. Now after creating project our main thing's start from here. So let's see in detail.
+                     </p>
+
+                     <p>
+                       When you create a empty application from template screen you will see this screen as below pic given.
+                     </p>
+                     
+                     <div class="quote-wrapper">
+                      <p>This is screen which will after creating a new project.</p>
+                        <div class="quotes">
+                           <center><img id="myImg8" src="https://raw.githubusercontent.com/TutorialsAndroid/tutorialsandroid.github.io/master/img/blog/blog06/Image04.png" style="width:100%;max-width:300px;"></center>
+                        </div>
+
+                         <!-- The Modal -->
+                        <div id="myModal8" class="modal8">
+                          <span class="close8">&times;</span>
+                          <img class="modal-content8" id="img08">
+                          <div id="caption8"></div>
+                        </div>
+                    </div> 
+
+                    <h2>Project Structure:</h2>
+                    <hr>
+                     <p>
+                      Now see on the left side pannel of android studio. Or if the pannel is hidden then just click on project tab present on left side see a vertical menu present in left side their is option named as project click on the project to see your project structure. See the below pic how project structure looks.
+                      	<div class="quote-wrapper">
+                      		<p>Project structure of your app</p>
+                      		<div class="quotes">
+                           		<center><img id="myImg9" src="https://raw.githubusercontent.com/TutorialsAndroid/tutorialsandroid.github.io/master/img/blog/blog06/Image05.png" style="width:100%;max-width:300px;">
+                           		</center>
+                      
+                        	 <!-- The Modal -->
+							 <div id="myModal9" class="modal9">
+  								<span class="close9">&times;</span>
+  								 <img class="modal-content9" id="img09">
+  								  <div id="caption9"></div>
+							 </div>
+							</div>
+                     	  </div>
+                      </p>  
+
+                      <p>Now will see in detail of project structure files. So let's start from manifest file first. Today we will learn only 50% about manifest because this blog is really long. And it's second part will be available tommorow.</p>
+
+                      <h2>AndroidManifest.xml :</h2>
+                      <hr>
+                      <p>What is manifest?. Every app project must have an AndroidManifest.xml file (with precisely that name) at the root of the project source set. The manifest file describes essential information about your app to the Android operating system, and etc... </p>
+
+                      <p>So let's see in detail what's inside the manifest:</p>
+                      <li>The app's package name, which is unique identity for your app</li>
+                      <hr>
+                      <li>The components of the app, which include all activities, services, broadcast receivers, and content providers. Each component must define basic properties such as the name of its Kotlin or Java class. It can also declare capabilities such as which device configurations it can handle, and intent filters that describe how the component can be started.</li>
+                      <hr>
+                      <li>The permissions that the app needs in order to access protected parts of the system or other apps. It also declares any permissions that other apps must have if they want to access content from this app.</li>
+                      <hr>
+                      <li>The hardware and software features the app requires, which affects which devices can install the app from Google Play.</li>
+
+                      <h2>Package name in manifest</h2>
+                      <hr>
+                      	<div class="quote-wrapper">
+                      		<p>See in the below pic package name is declared in manfiest. as in my previous blog i have tell you about package name.</p>
+                      		<div class="quotes">
+                           		<center><img id="myImg2" src="https://raw.githubusercontent.com/TutorialsAndroid/tutorialsandroid.github.io/master/img/blog/blog06/package-name.png" style="width:100%;max-width:300px;">
+                           		</center>
+                      
+                        	 <!-- The Modal -->
+							 <div id="myModal2" class="modal2">
+  								<span class="close2">&times;</span>
+  								 <img class="modal-content2" id="img02">
+  								  <div id="caption2"></div>
+							 </div>
+							</div>
+							<p>While building your app into the final application package (APK), the Android build tools use the package attribute for two things:
+
+							<li>It applies this name as the namespace for your app's generated R.java class (used to access your app resources).
+							Example: With the above manifest, the R class is created at com.example.myapplication.R.</li>
+
+							<li>It uses this name to resolve any relative class names that are declared in the manifest file.
+							Example: With the above manifest, an activity declared as <activity android:name=".MainActivity"> is resolved to be com.example.myapp.MainActivity.</li></p>
+
+							<p>Now you will have a little bit question what is android build tools and what is R.java class. So let's see in more detail about this</p>	
+
+							<h2>Android Build Tools</h2>
+							<hr>
+							<p>In simple language i can only say that android build tools is a component for android that is required to build android apps.</p>
+
+							<h2>R.java class</h2>
+							<hr>
+							<p>Android R.java class is an auto-generated file by aapt (Android Asset Packaging Tool) that contains resource IDs for all the resources of res/ directory. So now again question arise what is aapt. AAPT is a tool to pack your java classes files and resources into a app... normally known as APK file..So what are resource IDs..Let's took an example here: Their are two boys in a class and their names are also same so when you want to call one boy but his and another boy name is same so how will you call that boy..Yeah answer is simple you will call that boy by its Roll no..Like this only resource IDs are.. When their are two input text field with same name but their IDs are different one text field Id is input1 and another text field Id is input2. So this is called resource IDs. On later blogs we gonna use this ID when we will design the app.</p>
+                     	  </div>
+
+                      <h2>App components</h2>
+                      <hr>
+                      <p>So what are app components?. App components are the essential building blocks of an Android app. Each component is an entry point through which the system or a user can enter your app. Some components depend on others.</p>
+
+                      <p>There are four different types of app components:</p>
+							<li>Activities</li>
+							<li>Services</li>
+							<li>Broadcast receivers</li>
+							<li>Content providers</li>
+					  <p>Each type serves a distinct purpose and has a distinct lifecycle that defines how the component is created and destroyed. The following sections describe the four types of app components. Now we will se in details of different types of app components.</p>
+
+					  <h2>Activities</h2>
+					  <hr>
+					  <p>An activity is the entry point for interacting with the user. It represents a single screen with a user interface. For example, an email app might have one activity that shows a list of new emails, another activity to compose an email, and another activity for reading emails. Although the activities work together to form a cohesive user experience in the email app, each one is independent of the others. As such, a different app can start any one of these activities if the email app allows it. For example, a camera app can start the activity in the email app that composes new mail to allow the user to share a picture. An activity facilitates the following key interactions between system and app:
+
+						<li>Keeping track of what the user currently cares about (what is on screen) to ensure that the system keeps running the process that is hosting the activity.</li>
+						<li>Knowing that previously used processes contain things the user may return to (stopped activities), and thus more highly prioritize keeping those processes around.</li>
+						<li>Helping the app handle having its process killed so the user can return to activities with their previous state restored.</li>
+						<li>Providing a way for apps to implement user flows between each other, and for the system to coordinate these flows. (The most classic example here being share.)</li>
+						<p>You implement an activity as a subclass of the Activity class. For more information about the Activity class, see the Activities developer guide.</p>
+
+					 <h2>Services:</h2>
+					 <hr>
+					 <p>A service is a general-purpose entry point for keeping an app running in the background for all kinds of reasons. It is a component that runs in the background to perform long-running operations or to perform work for remote processes. A service does not provide a user interface. For example, a service might play music in the background while the user is in a different app, or it might fetch data over the network without blocking user interaction with an activity. Another component, such as an activity, can start the service and let it run or bind to it in order to interact with it. There are actually two very distinct semantics services tell the system about how to manage an app: Started services tell the system to keep them running until their work is completed. This could be to sync some data in the background or play music even after the user leaves the app. Syncing data in the background or playing music also represent two different types of started services that modify how the system handles them:</p>
+
+					<li>Music playback is something the user is directly aware of, so the app tells the system this by saying it wants to be foreground with a notification to tell the user about it; in this case the system knows that it should try really hard to keep that service's process running, because the user will be unhappy if it goes away.</li>
+
+					<li style="padding-bottom: 20px;">A regular background service is not something the user is directly aware as running, so the system has more freedom in managing its process. It may allow it to be killed (and then restarting the service sometime later) if it needs RAM for things that are of more immediate concern to the user.</li>
+
+					<p>Bound services run because some other app (or the system) has said that it wants to make use of the service. This is basically the service providing an API to another process. The system thus knows there is a dependency between these processes, so if process A is bound to a service in process B, it knows that it needs to keep process B (and its service) running for A. Further, if process A is something the user cares about, then it also knows to treat process B as something the user also cares about. Because of their flexibility (for better or worse), services have turned out to be a really useful building block for all kinds of higher-level system concepts. Live wallpapers, notification listeners, screen savers, input methods, accessibility services, and many other core system features are all built as services that applications implement and the system binds to when they should be running.</p>
+
+					<p>A service is implemented as a subclass of Service. For more information about the Service class, see the Services developer guide.</p>
+
+					<h2>Broadcast Receivers</h2>
+					<hr>
+					<p>A broadcast receiver is a component that enables the system to deliver events to the app outside of a regular user flow, allowing the app to respond to system-wide broadcast announcements. Because broadcast receivers are another well-defined entry into the app, the system can deliver broadcasts even to apps that aren't currently running. So, for example, an app can schedule an alarm to post a notification to tell the user about an upcoming event... and by delivering that alarm to a BroadcastReceiver of the app, there is no need for the app to remain running until the alarm goes off. Many broadcasts originate from the system—for example, a broadcast announcing that the screen has turned off, the battery is low, or a picture was captured. Apps can also initiate broadcasts—for example, to let other apps know that some data has been downloaded to the device and is available for them to use. Although broadcast receivers don't display a user interface, they may create a status bar notification to alert the user when a broadcast event occurs. More commonly, though, a broadcast receiver is just a gateway to other components and is intended to do a very minimal amount of work. For instance, it might schedule a JobService to perform some work based on the event with JobScheduler
+					A broadcast receiver is implemented as a subclass of BroadcastReceiver and each broadcast is delivered as an Intent object. For more information, see the BroadcastReceiver class.</p>
+
+					<h2>Content providers</h2>
+					<hr>
+					<p>A content provider manages a shared set of app data that you can store in the file system, in a SQLite database, on the web, or on any other persistent storage location that your app can access. Through the content provider, other apps can query or modify the data if the content provider allows it. For example, the Android system provides a content provider that manages the user's contact information. As such, any app with the proper permissions can query the content provider, such as ContactsContract.Data, to read and write information about a particular person.</p>
+
+					<p>So finally 50% you know about AndroidManifest.xml .Take a rest and come back tommorow. Stay Home Stay Safe.</p>
+                  </div>
+               </div>
+             </div>
+           </div>
+         </div>          
+   </section>
+   <!--================Blog Area end =================-->
+
+ <!-- footer part start-->
+    <footer class="footer-area">
+        <div class="copyright_part">
+            <div class="container">
+                <div class="row align-items-center">
+                    <center><p>
+						Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This Page Developed And Managed With <i class="ti-heart" aria-hidden="true"></i> By Tushar Masram</p></center>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- footer part end-->
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-163881002-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-163881002-1');
+    </script> 
+
+     <script src="https://cdn.jsdelivr.net/gh/TutorialsAndroid/tutorialsandroid.github.io@9c228ea/js/jquery-3.5.0.min.js"></script>
+  <script>
+    // Get the modal
+    var modal = document.getElementById("myModal8");
+    // Get the image and insert it inside the modal - use its "alt" text as a caption
+    var img = document.getElementById("myImg8");
+    var modalImg = document.getElementById("img08");
+    var captionText = document.getElementById("caption8");
+    img.onclick = function(){
+        modal.style.display = "block";
+        modalImg.src = this.src;
+        captionText.innerHTML = this.alt;
+    }
+    // Get the <span> element that closes the modal
+    var span = document.getElementsByClassName("close8")[0];
+    // When the user clicks on <span> (x), close the modal
+    span.onclick = function() { 
+       modal.style.display = "none";
+    }
+
+    // Get the modal
+    var modal = document.getElementById("myModal9");
+    // Get the image and insert it inside the modal - use its "alt" text as a caption
+    var img = document.getElementById("myImg9");
+    var modalImg = document.getElementById("img09");
+    var captionText = document.getElementById("caption9");
+    img.onclick = function(){
+        modal.style.display = "block";
+        modalImg.src = this.src;
+        captionText.innerHTML = this.alt;
+    }
+    // Get the <span> element that closes the modal
+    var span = document.getElementsByClassName("close9")[0];
+    // When the user clicks on <span> (x), close the modal
+    span.onclick = function() { 
+       modal.style.display = "none";
+    }
+
+     // Get the modal
+    var modal = document.getElementById("myModal2");
+    // Get the image and insert it inside the modal - use its "alt" text as a caption
+    var img = document.getElementById("myImg2");
+    var modalImg = document.getElementById("img02");
+    var captionText = document.getElementById("caption2");
+    img.onclick = function(){
+        modal.style.display = "block";
+        modalImg.src = this.src;
+        captionText.innerHTML = this.alt;
+    }
+    // Get the <span> element that closes the modal
+    var span = document.getElementsByClassName("close2")[0];
+    // When the user clicks on <span> (x), close the modal
+    span.onclick = function() { 
+       modal.style.display = "none";
+    }
+  </script>
+
+
+ </body>
+ 
+ </html>
