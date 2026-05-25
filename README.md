@@ -81,14 +81,54 @@ Through **TutorialsAndroid**, I create and maintain open-source projects focused
 
 ## 🌟 Featured Open Source Work
 
-<p align="center">
+<table align="center">
+  <tr>
+    <td width="50%" align="center">
+      <h3>✨ KAlertDialog</h3>
+      <p>
+        A beautiful, modern, customizable Material-style AlertDialog library for Android.
+      </p>
+
+  <p>
+    <img src="https://img.shields.io/github/stars/TutorialsAndroid/KAlertDialog?style=for-the-badge&logo=github&label=Stars" />
+    <img src="https://img.shields.io/github/forks/TutorialsAndroid/KAlertDialog?style=for-the-badge&logo=github&label=Forks" />
+  </p>
+
+  <p>
+    <img src="https://img.shields.io/github/license/TutorialsAndroid/KAlertDialog?style=for-the-badge" />
+    <img src="https://img.shields.io/github/languages/top/TutorialsAndroid/KAlertDialog?style=for-the-badge" />
+  </p>
+
   <a href="https://github.com/TutorialsAndroid/KAlertDialog">
-    <img src="https://github-readme-stats.vercel.app/api/pin/?username=TutorialsAndroid&repo=KAlertDialog&theme=tokyonight&hide_border=true&border_radius=14" />
+    <img src="https://img.shields.io/badge/View%20Repository-KAlertDialog-181717?style=for-the-badge&logo=github" />
   </a>
+</td>
+
+<td width="50%" align="center">
+  <h3>📁 FilePicker</h3>
+  <p>
+    Android library to select files and directories from device storage.
+  </p>
+
+  <p>
+    <img src="https://img.shields.io/github/stars/TutorialsAndroid/FilePicker?style=for-the-badge&logo=github&label=Stars" />
+    <img src="https://img.shields.io/github/forks/TutorialsAndroid/FilePicker?style=for-the-badge&logo=github&label=Forks" />
+  </p>
+
+  <p>
+    <img src="https://img.shields.io/github/license/TutorialsAndroid/FilePicker?style=for-the-badge" />
+    <img src="https://img.shields.io/github/languages/top/TutorialsAndroid/FilePicker?style=for-the-badge" />
+  </p>
+
   <a href="https://github.com/TutorialsAndroid/FilePicker">
-    <img src="https://github-readme-stats.vercel.app/api/pin/?username=TutorialsAndroid&repo=FilePicker&theme=tokyonight&hide_border=true&border_radius=14" />
+    <img src="https://img.shields.io/badge/View%20Repository-FilePicker-181717?style=for-the-badge&logo=github" />
   </a>
-</p>
+</td>
+
+  </tr>
+</table>
+
+<br>
 
 <p align="center">
   <a href="https://github.com/TutorialsAndroid?tab=repositories">
@@ -108,19 +148,6 @@ Web Projects             ████████████████
 Documentation            ███████████████
 Learning & Experiments   ███████████████████
 ````
-
----
-
-## 📊 GitHub Analytics
-
-<p align="center">
-  <img width="49%" src="https://github-readme-stats.vercel.app/api?username=TutorialsAndroid&show_icons=true&theme=tokyonight&hide_border=true&border_radius=14&rank_icon=github" />
-  <img width="49%" src="https://github-readme-streak-stats.herokuapp.com/?user=TutorialsAndroid&theme=tokyonight&hide_border=true&border_radius=14" />
-</p>
-
-<p align="center">
-  <img width="55%" src="https://github-readme-stats.vercel.app/api/top-langs/?username=TutorialsAndroid&layout=compact&theme=tokyonight&hide_border=true&border_radius=14" />
-</p>
 
 ---
 
